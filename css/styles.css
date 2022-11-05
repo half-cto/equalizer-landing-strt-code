@@ -1,12 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
 :root {
     --clr-accent-aquamarine: #66E2DC;
     --clr-accent-red: #FA7453;
     --clr-accent-orange: #FFB964;
     --clr-neutral-900: #191826;
-    --clr-neutral-400: #FFF;
+    --clr-neutral-400: #FCFAF9;
+    --clr-bg: #FCFAF9;
 
-    --fs-700: 5.5rem; /* 88px */
-    --fs-600: 2.5rem; /* 40px */
-    --fs-500: 1.25rem; /* 20px */
-    --fs-400: 1.125rem; /* 18px */
+    --fs-700: 5.5rem;       /* 88px */
+    --fs-650: 4.0625rem;    /* 65px */
+    --fs-600: 2.5rem;       /* 40px */
+    --fs-500: 1.125rem;     /* 18px */
+    --fs-400: 1.25rem;      /* 20px */
+
+    --lh-700: 5.5rem;       /* 88px */
+    --lh-600: 3.25rem;      /* 52px */
+    --lh-500: 1.625rem;     /* 26px */
+    --lh-400: 2.125rem;     /* 34px */
+}
+
+@media screen and (max-width: 27em) {
+    :root {
+        --fs-700: 2.5rem;   /* 40px */
+        --fs-600: 2rem;     /* 32px */
+        --fs-500: 1.125rem; /* 18px */
+        --fs-400: 1rem;     /* 16px */ 
+
+        --lh-700: 3rem;     /* 48px */
+        --lh-600: 2.5rem;   /* 40px */
+        --lh-500: 1.75rem;  /* 28px */
+        --lh-400: 1.625rem; /* 26px */
+    }   
+}
+
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1 {
+    font-size: var(--fs-700);
+    letter-spacing: -1px;
+    font-weight: 700;
+    line-height: var(--lh-700);
+}
+
+h2 {
+    font-size: var(--fs-600);
+    font-weight: 700;
+    line-height: var(--lh-600);
+}
+
+p {
+    font-size: var(--fs-400);
+    font-weight: 400;
+    line-height: var(--lh-400);
+}
+
+img {
+    height:auto;
+    width: 100%;
+}
+
+/* * ---------------------------------------  */
+
+main {
+    width: 100vw;
+    background-image: url(../assets/bg-main-mobile.png);
+    background-position: right -15rem top -17rem;
+    background-repeat: no-repeat;
+    background-color: var(--clr-bg);
+}
+
+/* * ---------------------------------------  */
+
+.container-top {
+    padding-top: 2.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 4.25rem;
+}
+
+.logo {
+    width: 9.125rem;
+}
+
+.container-top > h1 {
+    padding-top: 4rem;
+}
+
+.container-top > p {
+    padding-top: 1.25rem;
+}
+
+/* * ---------------------------------------  */
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 1rem;
+    padding-top: .875rem;
+    padding-bottom: .9375rem;
+    cursor: pointer;
+    transform: background-color .5s ease-out;
+}
+
+.button > p {
+    font-weight: 700;
+}
+
+.ios {
+    background-color: var(--clr-neutral-900);
+}
+
+.ios:hover {
+    background-color: var(--clr-accent-aquamarine);
+}
+
+.android {
+    color: var(--clr-neutral-900);
+    background-color: var(--clr-neutral-400);
+}
+
+.android:hover {
+    background-color: var(--clr-accent-orange);
+}
+
+/* * ---------------------------------------  */
+.container-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-dark {
+    background-color: var(--clr-neutral-900);
+    background-image: url(../assets/bg-pattern-2.svg);
+    background-position: left 2rem top 0rem;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    height: 39rem;
+}
+
+.container-phone {
+    position: relative;
+    height: 6.25rem;
+}
+
+.img-phone {
+    position: absolute;
+    width:60%;
+    left: 20%;
+}
+
+.container-sub {
+    position: relative;
+    height: 20.5rem;
+}
+.subscribe-card {
+    position: absolute;
+    background-color: #FA7453;
+    bottom: 0rem;
+    border-radius: 12px;
+    color: var(--clr-neutral-400);
+    padding: 3rem 2.25rem;
+}
+
+.subscribe-card > p {
+    font-size: var(--fs-500);
+    line-height: var(--lh-500);
+    padding-top: .75rem;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 1rem;
+    margin-top: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: var(--fs-650);
+    font-weight: 700;
+}
+
+/* * ------------------------- FOOTER ---------------------------------- */
+
+footer {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: var(--clr-bg);
+    padding-top: 4rem;
+    padding-left: 1.5rem;
+    padding-right: 3.3rem;
+}
+
+footer > p {
+    margin-top: 2rem;
+    color: var(--clr-neutral-900);
+}
+
+.container-icon {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 1.25rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.media-icon {
+    width: 1.25rem;
+}
+
+strong {
+    font-weight: 700;
 }
