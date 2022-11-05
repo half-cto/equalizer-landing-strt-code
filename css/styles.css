@@ -1,0 +1,12 @@
+:root {
+    --clr-accent-aquamarine: #66E2DC;
+    --clr-accent-red: #FA7453;
+    --clr-accent-orange: #FFB964;
+    --clr-neutral-900: #191826;
+    --clr-neutral-400: #FFF;
+
+    --fs-700: 5.5rem; /* 88px */
+    --fs-600: 2.5rem; /* 40px */
+    --fs-500: 1.25rem; /* 20px */
+    --fs-400: 1.125rem; /* 18px */
+}
