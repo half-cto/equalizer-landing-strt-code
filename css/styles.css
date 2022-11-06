@@ -8,35 +8,24 @@
     --clr-neutral-400: #FCFAF9;
     --clr-bg: #FCFAF9;
 
-    --fs-700: 5.5rem;       /* 88px */
-    --fs-650: 4.0625rem;    /* 65px */
-    --fs-600: 2.5rem;       /* 40px */
+ /* * -------------------------- MOBILE SIZES ------------------------ */
+    
+    --fs-700: 2.5rem;       /* 40px */
+    --fs-600: 2rem;         /* 32px */
     --fs-500: 1.125rem;     /* 18px */
-    --fs-400: 1.25rem;      /* 20px */
+    --fs-400: 1rem;         /* 16px */ 
+    --fs-650: 4.0625rem;    /* 65px */
 
-    --lh-700: 5.5rem;       /* 88px */
-    --lh-600: 3.25rem;      /* 52px */
-    --lh-500: 1.625rem;     /* 26px */
-    --lh-400: 2.125rem;     /* 34px */
+    --lh-700: 3rem;         /* 48px */
+    --lh-600: 2.5rem;       /* 40px */
+    --lh-500: 1.75rem;      /* 28px */
+    --lh-400: 1.625rem;     /* 26px */
 }
-/* * -------------------------- MOBILE SIZES ------------------------ */
-@media screen and (max-width: 37.5em) {
-    :root {
-        --fs-700: 2.5rem;   /* 40px */
-        --fs-600: 2rem;     /* 32px */
-        --fs-500: 1.125rem; /* 18px */
-        --fs-400: 1rem;     /* 16px */ 
 
-        --lh-700: 3rem;     /* 48px */
-        --lh-600: 2.5rem;   /* 40px */
-        --lh-500: 1.75rem;  /* 28px */
-        --lh-400: 1.625rem; /* 26px */
-    }   
-}
 
 /* * -------------------------- TABLET SIZES ------------------------ */
 
-@media screen and (max-width: 48em) {
+@media screen and (min-width: 37.5em) {
     :root {
         --fs-700: 4rem;     /* 64px */
         --fs-400: 1.125rem; /* 18px */
@@ -46,6 +35,22 @@
     }   
 }
 
+/* * -------------------------- LAPTOP SIZES ------------------------ */
+
+@media screen and (min-width: 49em) {
+    :root {
+        --fs-700: 5.5rem;       /* 88px */
+        --fs-650: 4.0625rem;    /* 65px */
+        --fs-600: 2.5rem;       /* 40px */
+        --fs-500: 1.125rem;     /* 18px */
+        --fs-400: 1.25rem;      /* 20px */
+
+        --lh-700: 5.5rem;       /* 88px */
+        --lh-600: 3.25rem;      /* 52px */
+        --lh-500: 1.625rem;     /* 26px */
+        --lh-400: 2.125rem;     /* 34px */
+    }
+}
 
 * {
     font-family: 'IBM Plex Sans', sans-serif;
@@ -140,7 +145,7 @@ main {
     background-position: center top 0rem;
     background-repeat: no-repeat;
     border-radius: 12px;
-    height: 39rem;
+    height: 38rem;
 }
 
 .container-phone {
@@ -200,6 +205,22 @@ main {
         width: min(270px, 60%);
         left: 10%;
     }
+
+    .container-sub {
+        height: 6rem;
+    }
+
+    .subscribe-card {
+        right: 3.5rem;
+        width: 19rem;
+        padding: 3rem 3rem;
+    }
+
+    .container-dark {
+        background-size: 17.5rem;
+        background-position: left 15rem top -2rem;
+        height: 37.5rem;
+    }
 }
 /* * ------------------------- FOOTER ---------------------------------- */
 
@@ -211,7 +232,7 @@ footer {
     padding-right: 3.3rem;
 }
 
-footer > p {
+.container-foot > p {
     margin-top: 2rem;
     color: var(--clr-neutral-900);
 }
@@ -230,6 +251,25 @@ footer > p {
 
 strong {
     font-weight: 700;
+}
+
+@media screen and (min-width: 37.5em) {
+
+    footer {
+        padding-top: 5.4rem;
+        padding-bottom: 5.3rem;
+    }
+
+    .container-foot {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .container-foot > p {
+        max-width: 26rem;
+    }
+
 }
 
 /* * ---------------------------------------  */
