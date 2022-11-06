@@ -37,7 +37,7 @@
 
 /* * -------------------------- LAPTOP SIZES ------------------------ */
 
-@media screen and (min-width: 49em) {
+@media screen and (min-width: 75em) {
     :root {
         --fs-700: 5.5rem;       /* 88px */
         --fs-650: 4.0625rem;    /* 65px */
@@ -99,7 +99,7 @@ main {
     }
 }
 
-@media screen and (min-width: 49em) {
+@media screen and (min-width: 75em) {
     main {
         background-image: url(../assets/bg-pattern-1.svg), url(../assets/bg-main-desktop.png);
         background-position: right 0rem top -2rem, right -9rem top -16rem;
@@ -141,7 +141,7 @@ main {
 }
 
 /* LAPTOP */
-@media screen and (min-width: 49em) {
+@media screen and (min-width: 75em) {
     .container-top {
         padding-top: 3.875rem;
         padding-left: 10.312rem;
@@ -251,7 +251,7 @@ main {
 
 /* ! LAPTOP */
 
-@media screen and (min-width: 49em) {
+@media screen and (min-width: 75em) {
     .container-col {
         margin: 0 min(10.31rem, 13vw);
     }
@@ -350,7 +350,7 @@ strong {
 
 }
 
-@media screen and (min-width: 49em) {
+@media screen and (min-width: 75em) {
     footer {
         display: flex;
         justify-content: space-between;
