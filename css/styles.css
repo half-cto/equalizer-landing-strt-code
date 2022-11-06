@@ -98,6 +98,14 @@ main {
         background-size: 17rem, 140%;
     }
 }
+
+@media screen and (min-width: 49em) {
+    main {
+        background-image: url(../assets/bg-pattern-1.svg), url(../assets/bg-main-desktop.png);
+        background-position: right 0rem top -2rem, right -9rem top -16rem;
+        background-size: 17rem, 126%;
+    }
+}
 /* * ---------------------------------------  */
 
 .container-top {
@@ -129,6 +137,23 @@ main {
 
     .container-top > h1 {
         padding-top: 6rem;
+    }
+}
+
+/* LAPTOP */
+@media screen and (min-width: 49em) {
+    .container-top {
+        padding-top: 3.875rem;
+        padding-left: 10.312rem;
+        padding-right: 25.5rem;
+        padding-bottom: 6.75rem;
+    }
+    .container-top > h1 {
+        padding-top: 8rem;
+    }
+
+    .container-top > p {
+        padding-top: 2.5rem;
     }
 }
 
@@ -192,6 +217,8 @@ main {
     font-weight: 700;
 }
 
+/* ! TABLET */
+
 @media screen and (min-width: 37.5em) {
     .container-col {
         margin: 0 2.0625rem;
@@ -201,7 +228,6 @@ main {
     }
 
     .img-phone {
-        position: absolute;
         width: min(270px, 60%);
         left: 10%;
     }
@@ -222,11 +248,56 @@ main {
         height: 37.5rem;
     }
 }
+
+/* ! LAPTOP */
+
+@media screen and (min-width: 49em) {
+    .container-col {
+        margin: 0 min(10.31rem, 13vw);
+    }
+
+    .container-phone {
+        height: 13rem;
+    }
+
+    .img-phone {
+        width: min(312px, 60%);
+        left: 9.4%;
+    }
+
+    .container-dark {
+        background-size: 19.7rem;
+        background-position: left 21rem top -2.5rem;
+    }
+
+    .container-sub {
+        height: 7.58rem;
+    }
+
+    .subscribe-card {
+        right: 5.8rem;
+        width: 20.81rem;
+        padding-top: 3.625rem;
+        padding-left: 3.375rem;
+        padding-right: 3.375rem;
+        padding-bottom: 3rem;
+    }
+
+    .subscribe-card > p {
+        font-size: var(--fs-400);
+        line-height: var(--lh-400);
+        padding-top: 1.37rem;
+    }
+
+    .container {
+        margin-top: 2.44rem;
+        margin-bottom: 2.875rem;
+    }
+}
 /* * ------------------------- FOOTER ---------------------------------- */
 
 footer {
     font-family: 'IBM Plex Sans', sans-serif;
-    background-color: var(--clr-bg);
     padding-top: 4rem;
     padding-left: 1.5rem;
     padding-right: 3.3rem;
@@ -246,7 +317,14 @@ footer {
 }
 
 .media-icon {
+    height: 1.25rem;
     width: 1.25rem;
+    cursor: pointer;
+    transition: filter .3s ease-out;
+}
+
+.media-icon:hover {
+    filter: invert(86%) sepia(51%) saturate(1937%) hue-rotate(313deg) brightness(104%) contrast(101%);
 }
 
 strong {
@@ -270,6 +348,34 @@ strong {
         max-width: 26rem;
     }
 
+}
+
+@media screen and (min-width: 49em) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-start;
+        padding-left: 10.312rem;
+        padding-right: 10.312rem;
+    }
+
+    .logo.bottom {
+        height: 2rem;
+        padding-right: 8.625rem;
+    }
+
+    .container-foot {
+        width: 100%;
+    }
+
+    .container-foot > p {
+        margin-top: 0rem;
+        max-width: 30rem;
+    }
+    .container-icon {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
 }
 
 /* * ---------------------------------------  */
